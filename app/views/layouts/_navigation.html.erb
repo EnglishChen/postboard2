@@ -1,9 +1,7 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid" id="top">
     <div class="navbar-header">
-      <%= link_to "PostBoard", root_path, :class => 'navbar-brand' %>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <%= link_to "PostBoard-Home", root_path, :class => 'navbar-brand' %>
       <ul class="nav navbar-nav">
         <% if logged_in? %>
           <li><%= link_to "Welcome! #{current_user.name}"%></li>

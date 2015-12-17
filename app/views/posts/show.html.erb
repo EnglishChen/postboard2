@@ -7,7 +7,8 @@
       <%= @post.content %>
     </p>
     <br>
-    <small>posted by </small><%= " #{@post.user.name}" %>
+    <small>posted by </small><%= " #{@post_id}" %>  
+      <!-- delete #{@post.user.name} -->
   </div>
 </div>
 
@@ -20,7 +21,8 @@
         <%= comment.content %>
       </p>
       <br>
-      <small>commented by </small><%= "#{comment.user.name}" %>
+      <small>commented by </small><%= "#{comment_id}" %>
+      <!-- delete #{@comment.user.name} -->
     </div>
   </div>
 <% end %>
